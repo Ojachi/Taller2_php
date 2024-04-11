@@ -13,4 +13,3 @@ class Servicios
     return '<li class="list-group-item" id="lista_servicio" >' . $this->servicio . '</li>';
   }
 }
-?>

@@ -48,20 +48,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
   <div>
-
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
       <h1>Revision de datos</h1>
-      
-        <div class="h4">
-          <h5>Operario encargado</h5>
-          <p class="h3"><?php echo $operario->mostrarDatosO(); ?></p>
-        </div>
-
-        <div class="h4">
-          <h5>Vehículo Ingresado</h5>
-          <p class="h3"><?php echo $vehiculo->mostrarDatosV(); ?></p>
-        </div>
-      
+      <div class="h4">
+        <h5>Operario encargado</h5>
+        <p class="h3"><?php echo $operario->mostrarDatosO(); ?></p>
+      </div>
+      <div class="h4">
+        <h5>Vehículo Ingresado</h5>
+        <p class="h3"><?php echo $vehiculo->mostrarDatosV(); ?></p>
+      </div>
       <h1 class="titulo">Seleccione sus servicios</h1>
       <ul class="list-group">
         <li class="list-group-item">
@@ -82,10 +78,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </li>
       </ul>
       <input type="submit" value="Confirmar">
-
     </form>
   </div>
-
 </body>
 
 </html>

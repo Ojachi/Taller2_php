@@ -1,89 +1,91 @@
 /* Estilos para los formularios */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #91acbb;
+  font-family: Arial, sans-serif;
+  background-color: #91acbb;
 }
 
 form {
-    font-size: 20px;
-    margin: 15px 400px;
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 1%;
-    padding-bottom: 5%;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-family: sans-serif;
+  font-size: 20px;
+  margin: 15px 400px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 1%;
+  padding-bottom: 5%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
 }
 
-input[type="text"], input[type="number"], input[type="email"], select {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 20px;
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
 }
 
 input[type="submit"] {
-    background-color: #457fa0;
-    margin: auto;
-    color: white;
-    padding: 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: auto;
-    font-size: 20px;
+  background-color: #457fa0;
+  margin: auto;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto;
+  font-size: 20px;
 }
 
 input[type="submit"]:hover {
-    background-color: #5da5cf;
+  background-color: #5da5cf;
 }
 
 h5 {
-    font-size: 25px; 
-    color: #2e61a8;
-    text-align: center;
+  font-size: 25px;
+  color: #2e61a8;
+  text-align: center;
 }
 
 .h4 {
-    text-align: justify;
+  text-align: justify;
 }
 
-p{
-    font-weight: bold;
-    font-size: 20px;
+p {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 h1 {
-    font-size: 30px;
-    margin: 30px;
-    margin-bottom: 50px;
-    text-align: center;
-    color: #154992;
-    font-family: sans-serif;
+  font-size: 30px;
+  margin: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #154992;
+  font-family: sans-serif;
 }
 
 .list-group {
-    list-style: none;
-    padding: 0;
-    font-size: 25px;
-  }
-  
-  .list-group-item {
-    border: none;
-    margin-top: 15px;
-  }
-  
-  input[type="checkbox"] {
-    margin-right: 10px;
-    transform: scale(2);
-  }
-#lista_servicio {
-    list-style: disc;
-    margin-left: 17px;
+  list-style: none;
+  padding: 0;
+  font-size: 25px;
+}
 
+.list-group-item {
+  border: none;
+  margin-top: 15px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(2);
+}
+#lista_servicio {
+  list-style: disc;
+  margin-left: 17px;
 }

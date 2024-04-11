@@ -3,7 +3,7 @@ require_once 'operarioclass.php';
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $operario = new Operario($_POST['nombre'], $_POST['apellido'], $_POST['edad'], $_POST['correo'],$_POST['cedula'],$_POST['direccion']);
+  $operario = new Operario($_POST['nombre'], $_POST['apellido'], $_POST['edad'], $_POST['correo'], $_POST['cedula'], $_POST['direccion']);
   $_SESSION['operario'] = $operario;
   header("Location: vehiculo.php");
   exit;
@@ -12,17 +12,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro Operario</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
   <div>
 
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-    <h1 class="h1">Ingrese los Datos del Operario</h1>
+      <h1 class="h1">Ingrese los Datos del Operario</h1>
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required><br><br>
       <label for="apellido">Apellido:</label>
@@ -39,4 +41,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
   </div>
 </body>
+
 </html>
