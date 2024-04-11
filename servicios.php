@@ -48,21 +48,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <body>
   <div>
-    <h1>Confirme los datos</h1>
-    <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Operario encargado:</h5>
-                <p class="card-text"><?php echo $operario->mostrarDatosO(); ?></p>
-            </div>
-        </div>
-        <div class="card mt-3">
-            <div class="card-body">
-                <h5 class="card-title">Vehículo:</h5>
-                <p class="card-text"><?php echo $vehiculo->mostrarDatosV(); ?></p>
-            </div>
-        </div>
-    <h1>Seleccione sus servicios</h1>
+
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <h1>Confirme los datos</h1>
+<div class="h3">
+        <div class="h4">
+            <h5 class="h5">Operario encargado</h5>
+            <p class="h6"><?php echo $operario->mostrarDatosO(); ?></p>
+        </div>
+    </div>
+    <div class="h2">
+        <div class="h4">
+            <h5 class="h5">Vehículo</h5>
+            <p class="h6"><?php echo $vehiculo->mostrarDatosV(); ?></p>
+        </div>
+    </div>
+    <h1>Seleccione sus servicios</h1>
       <ul class="list-group">
         <li class="list-group-item">
           <input type="checkbox" name="servicios[]" value="Lavado completo del vehículo"> Lavado completo del vehículo

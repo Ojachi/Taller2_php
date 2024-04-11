@@ -16,12 +16,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro Operario</title>
-  <link rel="stylesheet" type="text/css" href="../Taller2_Parcial/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div id="contenedor">
+  <div>
+
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-    <h1 >Ingrese los datos del Operario</h1>
+    <h1 class="h1">Ingrese los Datos del Operario</h1>
       <label for="nombre">Nombre:</label>
       <input type="text" id="nombre" name="nombre" required><br><br>
       <label for="apellido">Apellido:</label>

@@ -24,23 +24,25 @@ if (!isset($_SESSION['operario']) || !isset($_SESSION['vehiculo']) || !isset($_S
 </head>
 
 <body>
+
     <div class="container">
-        <h2>INFORME</h2>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Operario encargado:</h5>
-                <p class="card-text"><?php echo $operario->mostrarDatosO(); ?></p>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <h1>INFORME</h1>
+        <div class="h3">
+            <div class="h4">
+                <h5 class="h5">Operario encargado</h5>
+                <p class="h6"><?php echo $operario->mostrarDatosO(); ?></p>
             </div>
         </div>
-        <div class="card mt-3">
-            <div class="card-body">
-                <h5 class="card-title">Vehículo:</h5>
-                <p class="card-text"><?php echo $vehiculo->mostrarDatosV(); ?></p>
+        <div class="h2">
+            <div class="h4">
+                <h5 class="h5">Vehículo</h5>
+                <p class="h6"><?php echo $vehiculo->mostrarDatosV(); ?></p>
             </div>
         </div>
-        <div class="card mt-3">
-            <div class="card-body">
-                <h5 class="card-title">Servicios requeridos:</h5>
+        <div class="h2">
+            <div class="h4">
+                <h5 class="h5">Servicios requeridos</h5>
                 <ul class="list-group list-group-flush">
                     <?php foreach ($servicios as $servicio) : ?>
                         <?php echo $servicio->mostrarDatosS(); ?>
@@ -48,6 +50,7 @@ if (!isset($_SESSION['operario']) || !isset($_SESSION['vehiculo']) || !isset($_S
                 </ul>
             </div>
         </div>
+    </form>
     </div>
 </body>
 </html>

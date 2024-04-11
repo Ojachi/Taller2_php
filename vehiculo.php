@@ -20,8 +20,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
   <div>
-    <h1>Ingrese los datos</h1>
+
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+    <h1>Ingrese los datos</h1>
       <label for="Marca">Marca:</label>
       <input type="text" id="Marca" name="Marca" required><br><br>
       <label for="Color">Color:</label>
