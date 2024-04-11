@@ -6,10 +6,10 @@ body {
 
 form {
     font-size: 20px;
-    margin: 150px;
+    margin: 15px 400px;
     padding-right: 100px;
     padding-left: 100px;
-    padding-top: 5%;
+    padding-top: 1%;
     padding-bottom: 5%;
     background-color: white;
     border-radius: 5px;
@@ -27,8 +27,6 @@ input[type="text"], input[type="number"], input[type="email"], select {
     font-size: 20px;
 }
 
-
-
 input[type="submit"] {
     background-color: #457fa0;
     margin: auto;
@@ -42,30 +40,30 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #457fa0;
+    background-color: #5da5cf;
 }
 
 h5 {
-    font-size: 45px;
-}
-h4 {
-    font-size: 35px
-}
-.h3 {
+    font-size: 25px; 
+    color: #2e61a8;
     text-align: center;
-    font-size: 35px;
 }
-.h2 {
-    text-align: center;
-    font-size: 35px;
+
+.h4 {
+    text-align: justify;
+}
+
+p{
+    font-weight: bold;
+    font-size: 20px;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 30px;
     margin: 30px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     text-align: center;
-    color: #4a5564;
+    color: #154992;
     font-family: sans-serif;
 }
 
@@ -75,20 +73,17 @@ h1 {
     font-size: 25px;
   }
   
-  .list-group.list-group-flush .list-group-item {
-    font-size: 35px;
-  }
-  
-  
-  
-
   .list-group-item {
     border: none;
-    margin: 30px;
-    font-size: 25px;
+    margin-top: 15px;
   }
   
   input[type="checkbox"] {
     margin-right: 10px;
     transform: scale(2);
   }
+#lista_servicio {
+    list-style: disc;
+    margin-left: 17px;
+
+}

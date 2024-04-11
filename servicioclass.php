@@ -10,7 +10,7 @@ class Servicios
 
   public function mostrarDatosS()
   {
-    return '<li class="list-group-item">' . $this->servicio . '</li>';
+    return '<li class="list-group-item" id="lista_servicio" >' . $this->servicio . '</li>';
   }
 }
 ?>
